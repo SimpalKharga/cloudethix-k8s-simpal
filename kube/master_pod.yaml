@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: master-nginx 
+  labels:
+    name: master-nginx 
+spec:
+  containers:
+  - name: master-nginx
+    image: kamranshaikh111/cloudethix_master_nginx_kamran:v1
+    ports:
+      - containerPort: 80
